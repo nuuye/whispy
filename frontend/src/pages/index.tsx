@@ -1,8 +1,12 @@
+import styles from "./index.module.scss";
+import SearchInput from "../components/searchInput/searchInput";
+
 export default function Home() {
     return (
-        <div>
-            <h1>Bienvenue sur Whispy !</h1>
-            <p>Ceci est la landing page de votre application Next.js.</p>
+        <div className={`glass ${styles.mainContainer}`}>
+            <header>
+                <SearchInput icon="/searchIcon.png" height={40} width={300}></SearchInput>
+            </header>
         </div>
     );
 }
